@@ -1,0 +1,64 @@
+{
+  "name": "vue-custom-select-box",
+  "version": "0.0.3",
+  "main": "./dist/vue-custom-select-box.js",
+  "module": "./dist/vue-custom-select-box.cjs",
+  "type": "module",
+  "files": [
+    "dist/*",
+    "dist/*.css"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/vue-custom-select-box.js",
+      "require": "./dist/vue-custom-select-box.cjs"
+    },
+    "./style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
+  },
+  "keywords": ["vue" , "vue-selectbox", "vue-select" , "vue-multiselect" , "vue3" , "vue2" , "vue-selectmodel"],
+  "repository": {
+    "url": "https://github.com/Ahmedreda20/vue-custom-select-box"
+  },
+  "bugs": {
+    "url": "https://github.com/Ahmedreda20/vue-custom-select-box/issues",
+    "email": "ahmedreda0219@gmail.com"
+  },
+  "author": {
+    "email": "ahmedreda0219@gmail.com",
+    "name": "Ahmed Reda",
+    "url": "https://github.com/Ahmedreda20"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "library-build": "rollup -c"
+  },
+  "dependencies": {
+    "oh-vue-icons": "^1.0.0-rc3",
+    "pinia": "^2.0.21",
+    "vue": "^3.2.38",
+    "vue-custom-select-box": "^0.0.2"
+  },
+  "peerDependencies": {
+    "vue": "^3.2.38"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.0.3",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "rollup": "^3.2.3",
+    "rollup-plugin-css-only": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-vue": "^6.0.0",
+    "vite": "^3.0.9"
+  }
+}
